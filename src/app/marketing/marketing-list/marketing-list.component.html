@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row" >
+    <div class="col-sm" *ngFor="let gridCol of metaData">
+      {{gridCol.displayName}}
+    </div>   
+  </div>
+
+  <div class="row" *ngFor="let data of gridData">
+    <div class="col-sm">
+      {{data.rootTaskId}}
+    </div>
+    <div class="col-sm">
+      {{data.listName}}
+    </div>
+    <div class="col-sm">
+      {{data.listStatus}}
+    </div>
+    <div class="col-sm">
+      {{data.listImportStatus}}
+    </div>
+    <div class="col-sm">
+      {{data.listSize}}
+    </div>
+    <div class="col-sm">
+      {{data.startDateStr}}
+    </div>
+    <div class="col-sm">
+      {{data.expirationDateStr}}
+    </div>
+    <div class="col-sm">
+      {{data.createdOn}}
+    </div>
+    <div class="col-sm">
+      {{data.createdByUser}}
+    </div>
+    <div class="col-sm">
+      {{data.actions}}
+    </div>
+  </div>
+</div>
