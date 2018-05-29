@@ -8,12 +8,20 @@
        [id]="prop.key"
        [type]="prop.type">
 
-      <input *ngSwitchCase="'number'" [formControlName]="prop.key" [id]="prop.key" [type]="prop.type" [min]="prop.validation.min"
+      <input *ngSwitchCase="'number'" 
+        [formControlName]="prop.key" 
+        [id]="prop.key" 
+        [type]="prop.type" 
+        [min]="prop.validation.min"
         [max]="prop.validation.max">
 
       <div *ngSwitchCase="'radio'">
         <label *ngFor="let option of prop.options">
-          <input type="radio" [name]="prop.key" [formControlName]="prop.key" [value]="option.value"> {{option.label}}
+          <input type="radio" 
+            [name]="prop.key" 
+            [formControlName]="prop.key"
+            [value]="option.value"> 
+            {{option.label}}
         </label>
       </div>
 
@@ -44,7 +52,7 @@
     <!-- End of Validation Messages of above mentioned elements -->
   </div>
   <p>
-    <button type="submit">Save</button>
+    <button type="submit" [disabled]="!form.valid">Save</button>
   </p>
 </form>
 <hr />
