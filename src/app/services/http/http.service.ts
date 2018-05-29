@@ -12,7 +12,7 @@ export class HttpService {
 
   constructor(private http: Http) {
     // tslint:disable-next-line:max-line-length
-    this.token = 'CRMUser1@benefitalign.com:1525946618525:501:1:52271:CRMUser:CRMUser:0a804cdcde32cc3d59b4ab96bb9daf69:BenefitAlign:1001:2:null:CRM User1';
+    this.token = 'Dexter.Antony@benefitalign.com:1527252895752:96:21:18738:CRMUser:CRMUser:e4c2d88b11e97e78ad9a0a2bcd9c7eae:TrueCoverage Test:173:1:96:Dexter Antony:truecoverage-test';
     this.headers = new Headers();
     this.headers.append('Content-Type', 'application/json;charset=UTF-8');
     this.headers.append('X-Auth-Token', this.token);

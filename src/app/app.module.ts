@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // My Modules
@@ -11,10 +11,12 @@ import { AppComponent } from './app.component';
 // import { ListComponent } from './components/list/list.component';
 
 import { HttpService } from './services/http/http.service';
+import { DynamicFormComponent } from './common-components/dynamic-form/dynamic-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DynamicFormComponent,
     // BsNavbarComponent,
     // ListComponent
   ],
@@ -22,7 +24,8 @@ import { HttpService } from './services/http/http.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     HttpService

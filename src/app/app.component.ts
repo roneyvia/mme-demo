@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { person } from './person';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MME';
+  person;
+
+  constructor() {
+    this.person = person;
+  }
 }

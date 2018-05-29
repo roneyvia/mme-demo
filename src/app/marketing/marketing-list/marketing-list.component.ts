@@ -15,7 +15,7 @@ export class MarketingListComponent implements OnInit {
   }
   ngOnInit() {
     // tslint:disable-next-line:max-line-length
-    const entries = { 'eventContext': { 'contextMap': { 'entries': [{ 'key': 'hierarchyName', 'value': 'LeadCampaignHierarchy' }, { 'key': 'levelName', 'value': 'ListDashboard' }, { 'key': 'userAuthenticationDetails', 'value': { 'loggedInUserDetails': [{ 'key': 'userRootClientPartyId', 'value': '1' }, { 'key': 'userParentPartyId', 'value': 'null' }, { 'key': 'userSubjectPartyId', 'value': '501' }, { 'key': 'userContactId', 'value': '1001' }, { 'key': 'userLoginSessionId', 'value': '52271' }, { 'key': 'userUniqueSessionId', 'value': '2' }, { 'key': 'userRootClientPartyName', 'value': 'Demo Client' }, { 'key': 'userEmailId', 'value': 'CRMUser1@benefitalign.com' }] } }, { 'key': 'offset', 'value': 0 }] } }, 'actions': [], 'source': 'leadCampaign', 'name': 'listDashboardPage', 'asynchronous': 'false' };
+    const entries = { 'eventContext': { 'contextMap': { 'entries': [{ 'key': 'hierarchyName', 'value': 'LeadCampaignHierarchy' }, { 'key': 'levelName', 'value': 'ListDashboard' }, { 'key': 'userAuthenticationDetails', 'value': { 'loggedInUserDetails': [{ 'key': 'userRootClientPartyId', 'value': '21' }, { 'key': 'userParentPartyId', 'value': '96' }, { 'key': 'userSubjectPartyId', 'value': '96' }, { 'key': 'userContactId', 'value': '173' }, { 'key': 'userLoginSessionId', 'value': '18738' }, { 'key': 'userUniqueSessionId', 'value': '1' }, { 'key': 'userRootClientPartyName', 'value': 'Demo Client' }, { 'key': 'userEmailId', 'value': 'Dexter.Antony@benefitalign.com' }] } }, { 'key': 'offset', 'value': 0 }] } }, 'actions': [], 'source': 'leadCampaign', 'name': 'listDashboardPage', 'asynchronous': 'false' };
 
     this.service.postHttp(entries)
       .subscribe(response => {
@@ -32,4 +32,3 @@ export class MarketingListComponent implements OnInit {
       });
   }
 }
-
