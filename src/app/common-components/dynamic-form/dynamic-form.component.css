@@ -1,1 +1,9 @@
 .error { color: red; }
+
+.myStyle {
+    padding: 10%;
+}
+
+.myStyle2 {
+    background: red;
+}

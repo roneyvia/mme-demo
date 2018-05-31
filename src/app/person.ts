@@ -1,7 +1,7 @@
 export const person = {
     name: {
         label: 'Name',
-        value: 'Roney',
+        value: '',
         type: 'text',
         validation: {
             required: true,
@@ -24,7 +24,8 @@ export const person = {
         validation: {
             min: 1,
             max: 5
-        }
+        },
+        styleClass: ['myStyle', 'myStyle2']
     },
     gender: {
         label: 'Gender',
@@ -36,7 +37,8 @@ export const person = {
         ],
         validation: {
             required: true
-        }
+        },
+        styleClass: ['myStyle']
     },
     city: {
         label: 'City',

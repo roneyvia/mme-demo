@@ -13,14 +13,16 @@
         [id]="prop.key" 
         [type]="prop.type" 
         [min]="prop.validation.min"
-        [max]="prop.validation.max">
+        [max]="prop.validation.max"
+        [ngClass]="prop.styleClass">
 
       <div *ngSwitchCase="'radio'">
         <label *ngFor="let option of prop.options">
           <input type="radio" 
             [name]="prop.key" 
             [formControlName]="prop.key"
-            [value]="option.value"> 
+            [value]="option.value"
+            [ngClass]="prop.styleClass"> 
             {{option.label}}
         </label>
       </div>
