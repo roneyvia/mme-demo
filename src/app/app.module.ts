@@ -4,7 +4,6 @@ import { HttpModule } from '@angular/http';
 
 // My Modules
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
 
 // My Services
 import { HttpService } from './services/http/http.service';
@@ -18,8 +17,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpModule,
-    AppRoutingModule,
-    SharedModule
+    AppRoutingModule
   ],
   providers: [
     HttpService
