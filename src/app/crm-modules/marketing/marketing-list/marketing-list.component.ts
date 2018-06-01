@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import 'rxjs/add/operator/map';
-import { HttpService } from '../../services/http/http.service';
+import { HttpService } from '../../../services/http/http.service';
+
+import { person } from '../../../person';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -11,7 +13,10 @@ import { HttpService } from '../../services/http/http.service';
 export class MarketingListComponent implements OnInit {
   gridData: any;
   metaData: any;
+  person;
+
   constructor(private service: HttpService) {
+    this.person = person;
   }
   ngOnInit() {
     // tslint:disable-next-line:max-line-length

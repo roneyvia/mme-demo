@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'marketing',
-    loadChildren: '../app/marketing/marketing.module#MarketingModule'
+    loadChildren: '../app/crm-modules/marketing/marketing.module#MarketingModule'
   },
   {
     path: '',
